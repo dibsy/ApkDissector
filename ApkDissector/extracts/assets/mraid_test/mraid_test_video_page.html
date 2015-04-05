@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Video test</title>
+		<script>var mraidAutoDisplay = false;</script>
+		<script src="mraid.js"></script>
+	</head>
+	<body>
+		<video height="272" width="640" poster="http://content.bitsontherun.com/thumbs/q1fx20VZ-720.jpg" controls="" preload="auto" id="myVideo">
+			<source src="http://content.bitsontherun.com/videos/q1fx20VZ-52qL9xLP.mp4" type="video/mp4">
+			<source src="http://content.bitsontherun.com/videos/q1fx20VZ-27m5HpIu.webm" type="video/webm">
+			<p class="warning">Your browser does not support HTML5 video.</p>
+		</video>
+		
+		<script type="text/javascript">
+			var videoAd = videoAd || {};
+			
+			videoAd.app = function () {
+				var video = document.getElementById('myVideo'),
+					readyTimeoutId = null;
+			
+				function run() {
+					console.log('run called');
+				
+					if (typeof mraid === 'undefined') {
+						// The mraid object is not loaded yet, wait for 10ms and try again.
+						readyTimeoutId = setTimeout(run, 10);
+					} else {
+						clearTimeout(readyTimeoutId);
+						readyTimeoutId = null;
+						
+						if (mraid.getState() === 'loading') {
+							mraid.addEventListener('ready', attachEventListeners);
+						} else {
+							attachEventListeners();
+						}
+					}
+				}
+				
+				function attachEventListeners() {
+					console.log('attachEventListeners called');
+					
+					// The load method is not working on Andoird so we use the play/pause.
+					video.play();
+					video.pause();
+					
+					video.addEventListener('canplaythrough', bufferingEnded, false);
+					mraid.removeEventListener('ready');
+				}
+				
+				function bufferingEnded() {
+					console.log('bufferingEnded called');
+					video.play();
+					
+					video.removeEventListener('canplaythrough', bufferingEnded, false);
+					nativex.adConverted();
+				}
+				
+				return {
+					run: run
+				}
+			}();
+			videoAd.app.run();
+		</script>
+	</body>
+</html>

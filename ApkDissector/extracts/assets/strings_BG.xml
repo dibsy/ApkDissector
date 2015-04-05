@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="complex_video_player_controls_hint">Докосни екрана
+за показване на
+видео контролите</string>
+    <string name="complex_video_cannot_be_played">Видеото не може да бъде възпроизведено</string>
+    <string name="complex_video_server_error">Грешка от страна на сървъра</string>
+    <string name="complex_video_unknown_error">Неизвестна грешка</string>
+    <string name="complex_video_media_player_error">Грешка на плейъра</string>
+    <string name="no_network_connectivity">Няма интернет връзка</string>
+    <string name="no_network_dialog_connect">Свързаване</string>
+    <string name="progress_dialog_loading">Зареждане, моля изчакайте...</string>
+
+</resources>

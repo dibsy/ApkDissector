@@ -1,0 +1,47 @@
+<resources>
+    <string name="offerwall_topbar_history">Storia</string>
+    <string name="offerwall_topbar_rewards">Rewards</string>
+    
+    <string name="offerwall_offer_description_proceed_button">Clicca qui per procedere</string>
+    
+    <string name="offerwall_history_title">Storia</string>
+    <string name="offerwall_historylist_pull_message">Tirare per caricare più storia</string>
+    <string name="offerwall_historylist_release_message">Rilasciare per caricare più storia</string>
+    <string name="offerwall_historylist_loading_message">caricamento</string>
+    <string name="offerwall_historylist_item_status_label">stato: </string>
+    <string name="offerwall_historylist_item_reward">premiare: </string>
+    <string name="offerwall_historylist_item_clickdate">Fare clic su Data: </string>
+    <string name="offerwall_historylist_item_complete_button_click_to_procced">Fare clic per procedere</string>
+    <string name="offerwall_historylist_item_complete_button_offer_unvailable">L'offerta è disponibile</string>
+    
+    <string name="offerwall_bottom_bar_privacy_content_title">Privacy</string>
+    <string name="offerwall_bottom_bar_help_alert_continue_button">continuare</string>
+    <string name="offerwall_bottom_bar_help_alert_title">bisogno di aiuto?</string>
+    
+    <string name="offerwall_sorting_bar_sort_by">Ordina per</string>
+    <string name="offerwall_sorting_bar_currency_type">Tipo di valuta</string>
+    
+    <string name="offerwall_pulltoloadmore_loading">caricamento...</string>
+    <string name="offerwall_pulltoloadmore_release_message">Rilasciare per caricare più offerte</string>
+    <string name="offerwall_pulltoloadmore_pull_message">Tirare su di caricare altre offerte</string>
+    
+    <string name="complex_video_player_controls_hint">Toccare per visualizzare
+controlli nvideo</string>
+    <string name="complex_video_cannot_be_played">Questo video non può essere riprodotto</string>
+    <string name="complex_video_server_error">errore del server.</string>
+    <string name="complex_video_unknown_error">errore sconosciuto.</string>
+    <string name="complex_video_media_player_error">Errore Media Player</string>
+
+    <string name="no_network_connectivity">No Connettività di rete</string>
+    <string name="no_network_dialog_connect">collegare</string>
+    
+    <string name="progress_dialog_loading">Caricamento in corso, attendere prego...</string>
+    <string name="featured_alert_dialog_get_it">Get It!</string>
+    
+    <string name="upgrade_dialog_text_currency">valuta</string>
+    <string name="upgrade_dialog_text_this_app">questa applicazione</string>
+    <string name="upgrade_dialog_text_free">gratuito</string>
+    <string name="upgrade_dialog_title_message">guadagnare gratis </string>
+    <string name="upgrade_dialog_user_message">Attiva aggiornamento automatico di %1$s a Android Market e guadagnare %2$s %3$s .</string>
+    <string name="upgrade_dialog_upgrade_button">Aggiornamento</string>
+</resources>

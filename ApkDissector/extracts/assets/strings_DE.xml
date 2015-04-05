@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="complex_video_player_controls_hint">Tippen Sie auf
+video Steuerelemente anzuzeigen</string>
+    <string name="complex_video_cannot_be_played">Dieses Video kann nicht wiedergegeben werden</string>
+    <string name="complex_video_server_error">Server Fehler.</string>
+    <string name="complex_video_unknown_error">Unbekannter Fehler.</string>
+    <string name="complex_video_media_player_error">Media Player Fehler</string>
+    <string name="no_network_connectivity">Keine Netzwerkverbindung</string>
+    <string name="no_network_dialog_connect">Schließen</string>
+    <string name="progress_dialog_loading">Lade, bitte warten... </string>
+    <string name="upgrade_dialog_text_currency">Währung</string>
+    <string name="upgrade_dialog_text_this_app">diese App</string>
+    <string name="upgrade_dialog_text_free">kostenlos</string>
+    <string name="upgrade_dialog_title_message">verdienen kostenlos </string>
+    <string name="upgrade_dialog_user_message">Aktivieren Sie die automatische Aktualisierung der %1$s bei Android Market und verdienen %2$s %3$s .</string>
+    <string name="upgrade_dialog_upgrade_button">aktualisieren</string>
+
+</resources>

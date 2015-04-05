@@ -1,0 +1,57 @@
+window.initNativeXSizeScript = function () {
+ 	var nativeXSizeScript = window.nativeXSizeScript = {};
+ 	
+ 	// This is script that retrieves the size of the web page in order to size the web view.
+ 	nativeXSizeScript.getPageSize = function () {
+  		if (document && document.body) {
+  			var height = 0, width = 0;
+  			try {
+  				// first it retrieves all the children in the document body.
+	  			var bodyChildren = document.body.children;
+	  			if(bodyChildren.length != 0){
+	  				// then it loops through them and finds the first that is not <script>
+	  				for (var i = 0; i < bodyChildren.length; i++) {
+		  				var elem = bodyChildren[i];
+		  				var type = elem.tagName.toLowerCase();
+		  				if(type != 'script'){
+		  					// IMPORTANT: it is considered that there will be only 1 non-script element in the body and it's size determines the size of the
+		  					// web page.
+		  					var size = elem.getBoundingClientRect();
+		  					width = Math.max(size.width, width);
+		  					height = Math.max(size.height, height);
+		  					break;
+		  				}
+	  				}
+	  				
+	  			}
+  			} catch (e) {
+  				console.log('Failed to get page size - ' + e);
+  			}
+  			// send a message to the sdk with the size.
+  			nativeXSizeScript.callSdk('width=' + width + '&height=' + height);
+  		} else {
+   			// console.log('body is missing');
+  		}
+ 	}
+ 	
+ 	nativeXSizeScript.callSdk = function (params) {
+ 		try {
+    		if (typeof nativeXSDK !== 'undefined') {
+	    		nativeXSDK.setPageSize(params);
+    			return;
+    		}
+    	} catch (e) {
+    	}
+    	
+    	var iframe = document.createElement('iframe');
+	    iframe.setAttribute('src', 'nativeXSizeScript://setPageSize/?' + params);
+	    // Invoke the url by appending an iframe to the document
+	    document.documentElement.appendChild(iframe);
+	    iframe.parentNode.removeChild(iframe);
+	    iframe = null;
+    }
+}
+
+if (!window.nativeXSizeScript) {
+ 	window.initNativeXSizeScript();
+}

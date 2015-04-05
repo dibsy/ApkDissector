@@ -1,0 +1,47 @@
+<resources>
+    <string name="offerwall_topbar_history">History</string>
+    <string name="offerwall_topbar_rewards">Rewards</string>
+    
+    <string name="offerwall_offer_description_proceed_button">Click here to Proceed</string>
+    
+    <string name="offerwall_history_title">History</string>
+    <string name="offerwall_historylist_pull_message">Pull to load more history</string>
+    <string name="offerwall_historylist_release_message">Release to load more history</string>
+    <string name="offerwall_historylist_loading_message">Loading</string>
+    <string name="offerwall_historylist_item_status_label">Status: </string>
+    <string name="offerwall_historylist_item_reward">Reward: </string>
+    <string name="offerwall_historylist_item_clickdate">Click Date: </string>
+    <string name="offerwall_historylist_item_complete_button_click_to_procced">Click to Proceed</string>
+    <string name="offerwall_historylist_item_complete_button_offer_unvailable">Offer is Unavailable</string>
+    
+    <string name="offerwall_bottom_bar_privacy_content_title">Privacy</string>
+    <string name="offerwall_bottom_bar_help_alert_continue_button">Continue</string>
+    <string name="offerwall_bottom_bar_help_alert_title">Need Help?</string>
+    
+    <string name="offerwall_sorting_bar_sort_by">Sort By</string>
+    <string name="offerwall_sorting_bar_currency_type">Currency Type</string>
+    
+    <string name="offerwall_pulltoloadmore_loading">Loading ...</string>
+    <string name="offerwall_pulltoloadmore_release_message">Release to load more offers</string>
+    <string name="offerwall_pulltoloadmore_pull_message">Pull up to load more offers</string>
+    
+    <string name="complex_video_player_controls_hint">Tap to display
+video controls</string>
+    <string name="complex_video_cannot_be_played">This video cannot be played</string>
+    <string name="complex_video_server_error">Server error.</string>
+    <string name="complex_video_unknown_error">Unknown error.</string>
+    <string name="complex_video_media_player_error">Media Player Error</string>
+
+    <string name="no_network_connectivity">No Network Connectivity</string>
+    <string name="no_network_dialog_connect">Connect</string>
+    
+    <string name="progress_dialog_loading">Loading, please wait...</string>
+    <string name="featured_alert_dialog_get_it">Get It!</string>
+    
+    <string name="upgrade_dialog_text_currency">Currency</string>
+    <string name="upgrade_dialog_text_this_app">this app</string>
+    <string name="upgrade_dialog_text_free">free</string>
+    <string name="upgrade_dialog_title_message">Earn FREE </string>
+    <string name="upgrade_dialog_user_message">Enable automatic updating of %1$s at Android Market and earn %2$s %3$s .</string>
+    <string name="upgrade_dialog_upgrade_button">Upgrade</string>
+</resources>
