@@ -1,3 +1,24 @@
+/*
+ * ZipReader: Decompiles APK Files 
+    Copyright (C) 2015  Dibyendu Sikdar @dibsyhex
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * 
+ */
+
+
 package com.dibsyhex.zipreader;
 
 import java.io.BufferedInputStream;
@@ -25,7 +46,7 @@ public class ZipReader {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ZipReader zipReader=new ZipReader();
-		zipReader.getZipContents("templerun.apk");
+		zipReader.getZipContents("apks/PDFReader.apk");
 		
 		
 		//zipReader.getZipEntries("SillyGame.jpg");
@@ -39,43 +60,7 @@ public class ZipReader {
 		
 	}
 	
-	public void getStegFiles(String name) {
-		try {
-			File file=new File("SillyGame.jpg");	
-			FileInputStream fileInputStream = new FileInputStream(file);
-			
-			FileOutputStream fileOutputStream=new FileOutputStream("test.zip");
-			ZipOutputStream zipOutputStream=new ZipOutputStream(fileOutputStream);
-			ZipEntry ze= new ZipEntry("a.zip");
-    		zipOutputStream.putNextEntry(ze);
-			int len;
-			byte[] buffer = new byte[1024];
-			while((len=fileInputStream.read(buffer))>0){
-				zipOutputStream.write(buffer, 0, len);
-			}
-			
-			zipOutputStream.close();
-			fileOutputStream.close();
-			fileInputStream.close();
-		
-			
-			
-			//Step 2 : Extract the contents of the zip
-			
-			
-			
-			
-			
-		
-			
-			
-			
-		}catch (Exception e) {
-			System.out.println(e.toString());
-			e.printStackTrace();
-		}
-		
-	}
+	
 
 	public void getZipEntries(String name){
 		try{
@@ -121,12 +106,39 @@ public class ZipReader {
 				FileUtils.copyInputStreamToFile(inputStream,extractDirectory);
 				
 				
+				//Decode the xml files
+				
+				if(filename.endsWith(".xml")){
+					//First create a temp file at a location temp/extract/...
+					File temp=new File("temp"+File.separator+extractDirectory);
+					new File(temp.getParent()).mkdirs();
+					
+					//Create an object of XML Decoder
+					XmlDecoder xmlDecoder=new XmlDecoder();
+					InputStream inputStreamTemp=new FileInputStream(extractDirectory);
+					byte[] buf = new byte[50000];
+					int bytesRead = inputStreamTemp.read(buf);
+					String xml = xmlDecoder.decompressXML(buf);					
+					System.out.println(xml);
+					FileUtils.writeStringToFile(temp, xml);
+					 
+					//Now rewrite the files at the original locations
+					
+					FileUtils.copyFile(temp, extractDirectory);
+					
+					
+					
+					
+				}
+				
+				
 				
 			}
 			
 			
 			zipInputStream.close();
 			
+		
 			
 			
 			
@@ -137,16 +149,6 @@ public class ZipReader {
 	}
 	
 	
-	public void zipOpener(){
-		try{
-			File file=new File("a.zip");
-			org.apache.commons.compress.archivers.zip.ZipFile zipFile=new org.apache.commons.compress.archivers.zip.ZipFile(file);
-			Enumeration<ZipArchiveEntry>enumeration=zipFile.getEntries();
-			
-		}catch(Exception e){
-			System.out.println(e.toString());
-		}
-	}
 	
 	
 	
