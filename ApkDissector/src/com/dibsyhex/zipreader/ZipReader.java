@@ -33,30 +33,19 @@ import java.io.OutputStream;
 import java.util.Enumeration;
 import java.util.zip.*;
 
-import org.apache.commons.compress.archivers.ArchiveInputStream;
-import org.apache.commons.compress.archivers.ArchiveStreamFactory;
-import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
-import org.apache.commons.compress.archivers.zip.ZipArchiveInputStream;
-import org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream;
-import org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream;
-import org.apache.commons.compress.utils.IOUtils;
+
 import org.apache.commons.io.FileUtils;
 public class ZipReader {
 
+	public Response response=null;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ZipReader zipReader=new ZipReader();
 		zipReader.getZipContents("apks/PDFReader.apk");
-		
-		
-		//zipReader.getZipEntries("SillyGame.jpg");
-		
-		//zipReader.getStegFiles("df.jpg");
-		//zipReader.getZipEntries("PdfReader.apk");
-		//zipReader.zipOpener();
-		
-		
-		
+		//zipReader.getZipEntries("apks/PDFReader.apk");
+		zipReader.getZipContents("apks/templerun.apk");
+		//zipReader.getZipEntries("D:\\Projects\\Java\\ApkDissector\\apks\\PDFReader.apk");
 		
 	}
 	
@@ -68,15 +57,24 @@ public class ZipReader {
 			ZipFile zipFile=new ZipFile(file);
 			Enumeration<? extends ZipEntry>enumeration=zipFile.entries();
 			
-			System.out.println("Listing Entries in the zipfile");
+			System.out.println("Listing Entries in the apkfile");
+			
+			response.displayLog("Listing Entries in the apkfile");
+			
+			
 			while(enumeration.hasMoreElements()){
 				Object key=enumeration.nextElement();
-				System.out.println(key.toString()+":"+zipFile.getEntry(key.toString()));
+				//String s=key.toString()+":"+zipFile.getEntry(key.toString());
+				String s=zipFile.getEntry(key.toString()).toString();
+				System.out.println("  "+s);
+				
+				response.displayLog(s);
 			}
 						
 			zipFile.close();
 		}catch(Exception e){
 			System.out.println(e.toString());
+			response.displayError(e.toString());
 		}
 	}
 	
@@ -86,13 +84,18 @@ public class ZipReader {
 			File file=new File(name);			
 			FileInputStream fileInputStream=new FileInputStream(file);
 			ZipInputStream zipInputStream=new ZipInputStream(fileInputStream);			
-			System.out.println(zipInputStream.available());
+			//System.out.println(zipInputStream.available());
 			//System.out.println("Reading each entries in details:");
 			ZipFile zipFile=new ZipFile(file);
 			ZipEntry zipEntry;
+			
+			response.displayLog("Begining to extract");
+			
+			
 			while((zipEntry=zipInputStream.getNextEntry())!=null){
-				String filename="extracts/"+File.separator+zipEntry.getName();
+				String filename="extracts"+File.separator+file.getName()+File.separator+zipEntry.getName();
 				System.out.println(filename);
+				response.displayLog(filename);
 				File extractDirectory=new File(filename);
 				
 				//Create the directories
@@ -116,10 +119,10 @@ public class ZipReader {
 					//Create an object of XML Decoder
 					XmlDecoder xmlDecoder=new XmlDecoder();
 					InputStream inputStreamTemp=new FileInputStream(extractDirectory);
-					byte[] buf = new byte[50000];
+					byte[] buf = new byte[80000];//increase
 					int bytesRead = inputStreamTemp.read(buf);
 					String xml = xmlDecoder.decompressXML(buf);					
-					System.out.println(xml);
+					//System.out.println(xml);
 					FileUtils.writeStringToFile(temp, xml);
 					 
 					//Now rewrite the files at the original locations
@@ -135,7 +138,8 @@ public class ZipReader {
 				
 			}
 			
-			
+			response.displayLog("Extraction Done !");
+			System.out.println(" DONE ! ");
 			zipInputStream.close();
 			
 		
@@ -144,7 +148,7 @@ public class ZipReader {
 			
 		}catch (Exception e) {
 			System.out.println(e.toString());
-			e.printStackTrace();
+			response.displayError(e.toString());
 		}
 	}
 	

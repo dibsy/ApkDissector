@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="commons-compress-1.9.jar"/>
 	<classpathentry kind="lib" path="commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_25/jre/lib/jfxswt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

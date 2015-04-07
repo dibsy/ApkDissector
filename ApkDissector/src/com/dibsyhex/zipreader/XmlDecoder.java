@@ -219,7 +219,7 @@ public class XmlDecoder {
 			is = new FileInputStream(fileName);
 		}
 		
-		byte[] buf = new byte[50000];
+		byte[] buf = new byte[50000];//increase
 		int bytesRead = is.read(buf);
 		
 		is.close();

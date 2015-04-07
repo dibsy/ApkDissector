@@ -1,0 +1,216 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: res/color/vpi__dark_theme.xml
+SHA1-Digest: MGIUV/diuwO/SaBAhCfdh8isQX0=
+
+Name: res/drawable-xhdpi/next_page.png
+SHA1-Digest: AYaedl64IYSsmjiwEr8xFhG+YvE=
+
+Name: res/drawable-xhdpi/arrowup.png
+SHA1-Digest: /3jhPH4m+J4WBq5v02FC9Rk2V6k=
+
+Name: res/drawable-xhdpi/icon_pdf_reader.png
+SHA1-Digest: YaxbEJAg75+3cRlurojGrn9TAUs=
+
+Name: res/drawable-xhdpi/screen_zoom_in.png
+SHA1-Digest: ZKwnixm0rc1w//FZG8B6gPsXggE=
+
+Name: res/drawable-xhdpi/book.png
+SHA1-Digest: 3X08nO5+rUQopHmFcw35waqiIgY=
+
+Name: res/drawable-xhdpi/ic_next.png
+SHA1-Digest: q7frKZiL0iDU04oLO5LMjRx4sCA=
+
+Name: res/drawable-hdpi/custom_tab_indicator_unselected.9.png
+SHA1-Digest: /PTwXVxb3BGEihT7dUKodhEM/Bs=
+
+Name: res/drawable-xhdpi/screen_zoom_out.png
+SHA1-Digest: aZLGRlcncs7jzj9HUF/fhTj9ggU=
+
+Name: res/layout/document_title_bar.xml
+SHA1-Digest: jEt7+btnHjKrYlDKq6yaMxGG3XA=
+
+Name: res/drawable-hdpi/custom_tab_indicator_unselected_pressed.9.png
+SHA1-Digest: R/9b4wdExpsKKyMacyJXDL15/Io=
+
+Name: res/drawable-xhdpi/unlock.png
+SHA1-Digest: Gk+tw2wHWvhIU6vxL6YxWhvkVlc=
+
+Name: res/drawable-xhdpi/blue_up.png
+SHA1-Digest: v/SawhLDvFSs6O72L6ZI3Opd74Y=
+
+Name: res/drawable-xhdpi/arrow_left.png
+SHA1-Digest: Yf2Yk4ZsjveriNUATP/A96ZNpnI=
+
+Name: res/drawable-xhdpi/djvu.png
+SHA1-Digest: 4pX0ge6nIHbfPT6O1ukZQv01kYM=
+
+Name: res/drawable-xhdpi/button_cross.png
+SHA1-Digest: lSOVhEBazVRyaMMIv2xG3ap0Mv0=
+
+Name: res/layout/bookmark_item.xml
+SHA1-Digest: 9Yzmt7M5cKbhfiH6eisE8PCDwcA=
+
+Name: res/drawable-xhdpi/vpi__tab_selected_pressed_holo.9.png
+SHA1-Digest: OLaMsKJKZf1gU3w0fFirc0TUvPI=
+
+Name: res/drawable-xhdpi/white_list_1.png
+SHA1-Digest: /HHC+532MpRfkOzAcNweC7qz1R0=
+
+Name: res/layout/ads.xml
+SHA1-Digest: QTUsN8LQ6j/sG/amvmg/QVsqoy8=
+
+Name: res/layout/preferences.xml
+SHA1-Digest: rZfHes3as+M78mAA87xgD0pPEJA=
+
+Name: res/layout/key_dialog.xml
+SHA1-Digest: JUfClrO9dl2C+5KWkslLtD1ctdQ=
+
+Name: res/layout/title_list.xml
+SHA1-Digest: nQC2+7vcCuDbm1g/tay3logftW0=
+
+Name: res/drawable-xhdpi/crop.png
+SHA1-Digest: 37X5w/KNpvdn+XR59V/xg3WG9ko=
+
+Name: res/drawable-xhdpi/next_screen.png
+SHA1-Digest: yXly/CjCtik9E36R4i4XDeOYBhg=
+
+Name: res/drawable-xhdpi/vpi__tab_unselected_holo.9.png
+SHA1-Digest: /gfvVpjO7f9rI352ttw9SGtdR7Y=
+
+Name: res/drawable-xhdpi/plus.png
+SHA1-Digest: W19t8Vg1YZ6XSFDDNwqOZj7XQHQ=
+
+Name: lib/armeabi/libebookdroid.so
+SHA1-Digest: CBVv+ZiwhfKe1whm6sQy0P6Hu4U=
+
+Name: res/drawable-xhdpi/vpi__tab_unselected_focused_holo.9.png
+SHA1-Digest: NmRDFePyPs5iQYP0m4GdvViXRv8=
+
+Name: res/drawable-xhdpi/white_list_2.png
+SHA1-Digest: R6cn3/fGy29Tg1q5CgNoWUZJg1o=
+
+Name: res/color/vpi__light_theme.xml
+SHA1-Digest: PCGXtHN8rBgJLhTz7rZkw/C1Ntk=
+
+Name: res/drawable-xhdpi/vpi__tab_unselected_pressed_holo.9.png
+SHA1-Digest: YqrTPkw0EJvd8lkN0Y76St2GtT0=
+
+Name: res/drawable/custom_tab_indicator.xml
+SHA1-Digest: 5QmDqJ2e2nFmYerP/VIYnVJT67Q=
+
+Name: res/drawable-hdpi/custom_tab_indicator_selected.9.png
+SHA1-Digest: knEscNkLlL8WXn+fvaR5HZY8C/4=
+
+Name: res/drawable-xhdpi/lock.png
+SHA1-Digest: rMeWEZJLNNevvGZ4GyJRZjYdvLk=
+
+Name: res/drawable-xhdpi/arrow_right.png
+SHA1-Digest: JsetsB7A8XOHWTsPNmrz58Y2QOk=
+
+Name: resources.arsc
+SHA1-Digest: yV9/fjI8HhOB0ujQAtr4045RXbQ=
+
+Name: res/layout/outline_item.xml
+SHA1-Digest: +JQHCV99BLyam8NNE3/L3aghcAc=
+
+Name: res/layout/document_middle_buttons.xml
+SHA1-Digest: sAJqLhsKxgymwBxtXKOeXx5HOVk=
+
+Name: res/drawable-xhdpi/minus.png
+SHA1-Digest: KuAcBZXzOM4fo8FTXMsiK8P3n/w=
+
+Name: res/menu/nav_menu.xml
+SHA1-Digest: rarM+ysX0jxq0D3WFDQFT2iJbhA=
+
+Name: res/drawable-xhdpi/fullscreen1.png
+SHA1-Digest: LYLW3Sh3P/W0i66cJdgX3uQiD6A=
+
+Name: res/layout/browseritem.xml
+SHA1-Digest: KZ+CQkRKKn/n3rnRJDFAflck9dk=
+
+Name: res/drawable-xhdpi/document.png
+SHA1-Digest: FXG/FGFz6OrgFP7/s+GFlXOjFh8=
+
+Name: res/drawable-xhdpi/vpi__tab_selected_focused_holo.9.png
+SHA1-Digest: AmjEYxvpuVtaYTL71e9rnvkbedE=
+
+Name: res/layout/main_tabs.xml
+SHA1-Digest: b7hr9UMuFRe8XcU6zm5yJnmKneE=
+
+Name: res/layout/document_title_buttons.xml
+SHA1-Digest: liVhrb2FOZ70FyaGeh7gkv3WXuc=
+
+Name: AndroidManifest.xml
+SHA1-Digest: ZKQH78e4nQY1YWoa5K5jk+5F7U0=
+
+Name: res/drawable-xhdpi/blue_down.png
+SHA1-Digest: kStoh5uE66WjrSPC4cZTPptatQM=
+
+Name: res/layout/document_content_list.xml
+SHA1-Digest: SeYB+bM/BFGsfgWY/4p9NtsZIoE=
+
+Name: res/drawable-hdpi/custom_tab_indicator_selected_pressed.9.png
+SHA1-Digest: X+4ZOAPM011ViKW+W3xqAw1JKZ8=
+
+Name: res/drawable-xhdpi/contract2.png
+SHA1-Digest: 4zJiz1j9R/oEgsbDCpjfyHl7MKc=
+
+Name: res/drawable-xhdpi/brightness.png
+SHA1-Digest: he5Mt3FESWDbn12/lUujDjCAGX0=
+
+Name: res/drawable-xhdpi/folderopen.png
+SHA1-Digest: 1RK1ayw48tzyTn1uNLSur5kLiqw=
+
+Name: res/drawable-hdpi/custom_tab_indicator_focused.9.png
+SHA1-Digest: O7OrXeF+0YEemikSueYTyg+edpE=
+
+Name: res/drawable-xhdpi/stars.png
+SHA1-Digest: xBsJuuJT1Vf8Ci5Djq21dAlY+kM=
+
+Name: res/layout/document_view.xml
+SHA1-Digest: 4TTR7/4pGYe6I4YUDI9LleK7WFY=
+
+Name: res/drawable-xhdpi/cross.png
+SHA1-Digest: /YBcygYF0fnMqrHpXd3ZvfXkyV8=
+
+Name: res/drawable-xhdpi/vpi__tab_selected_holo.9.png
+SHA1-Digest: 8I6CrxyEqEIidVSRbOTA56OrDPM=
+
+Name: classes.dex
+SHA1-Digest: y1Olfmh1rJCFLbugmnMVnp3JlWY=
+
+Name: res/drawable-hdpi/custom_tab_indicator_unselected_focused.9.png
+SHA1-Digest: xIyXlRXNlC+ATypDGVJym/V41FU=
+
+Name: res/layout/dialog_color_picker.xml
+SHA1-Digest: iuDxlK3LBl9sYbNQwwjuH4evTjY=
+
+Name: res/drawable/vpi__tab_indicator.xml
+SHA1-Digest: DwYkBvvAF+Zoj+zsPQltEatmfRg=
+
+Name: res/drawable/wp_button.xml
+SHA1-Digest: H3HEmkwVdSCmm/mA0bSHe1/fzeU=
+
+Name: lib/x86/libebookdroid.so
+SHA1-Digest: /kNo2Pfa+qfXDC8NiAlBYd3C9sY=
+
+Name: res/layout/document_footer.xml
+SHA1-Digest: 6Dh5iFqRXN8OaY6PcBIIAVbHeig=
+
+Name: res/drawable-hdpi/custom_tab_indicator_divider.9.png
+SHA1-Digest: PoxeeFE1gxgKYYjKMfN1ri2qqEo=
+
+Name: res/drawable-hdpi/custom_tab_indicator_selected_focused.9.png
+SHA1-Digest: h9FiGVYEvbV4DsgiRYZJl+80u8s=
+
+Name: res/drawable-xhdpi/icon_pdf_pro.png
+SHA1-Digest: C0TvrqEHR8+GXOVWI+RmMDthBZc=
+
+Name: res/layout/browseritem_search.xml
+SHA1-Digest: Cx+xE1tRfFRGcKSgsMGG+qAkxec=
+
+Name: res/drawable/bg_button.xml
+SHA1-Digest: PnoPq+G5LgFLVuG3sx8ttQzJMzM=
+
