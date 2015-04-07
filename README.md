@@ -9,7 +9,7 @@ Basic useful feature list:
  * Decompile and extract the contents of the APK file
  
 ## How to use this application ?
-Download and extract the zip file from http://sourceforge.com/dibsyhex
+Download and extract the zip file from https://sourceforge.net/u/dibsyhex/profile/
 
 Double click and open the jar file 
 
