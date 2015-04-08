@@ -26,7 +26,7 @@ import javax.swing.SwingUtilities;
 
 
 public class ApkDissector implements Response{
-	private static final String VERSION=" v1.1";
+	private static final String VERSION=" v1.2";
 	private String fileName;
 	
 	private JPanel mainpanel;
@@ -34,12 +34,14 @@ public class ApkDissector implements Response{
 	private JPanel responsePanel;
 	
 	private JLabel image;
+	private JLabel background;
 	private JLabel footerImage;
 	private JFileChooser jFileChooser;
 	private JButton selectFileButton;
 	private JLabel selectfileLabel;
 	private JButton analyzeButton;
 	private JButton decompileButton;
+	private JButton aboutButton;
 	private JTextArea responseArea;
 	
 	
@@ -51,7 +53,9 @@ public class ApkDissector implements Response{
 		mainframe.setVisible(true);
 		mainframe.setResizable(false);
 		mainframe.setLayout(new FlowLayout(FlowLayout.CENTER,0,0));
-		mainframe.setBackground(Color.BLACK);
+		mainframe.setBackground(Color.WHITE);
+		
+		background=new JLabel(new ImageIcon("appdissectorbackground.png"));
 		
 		
 		
@@ -61,21 +65,23 @@ public class ApkDissector implements Response{
 		
 		//Managing MainPanel
 		mainpanel=new JPanel(new GridBagLayout());
-		mainpanel.setBackground(Color.BLACK);
+		//mainpanel.setBackground(new Color(253,253,181));
+		mainpanel.add(background);
 		
 		//Managing Buttons Panel
 		buttonsPanel=new JPanel(new FlowLayout(FlowLayout.CENTER));
-		buttonsPanel.setBackground(Color.BLACK);
+		//buttonsPanel.setBackground(Color.WHITE);
+		buttonsPanel.add(background);
 		//buttonsPanel=new JPanel(new GridLayout(1,3));
 		
 		
 		//Managing Response Panel
 		responsePanel=new JPanel(new FlowLayout());
-		responsePanel.setBackground(Color.BLACK);
-		
+		responsePanel.setBackground(new Color(226,236,236));
+		responsePanel.add(background);
 		
 		//Header image
-		image=new JLabel(new ImageIcon("apkdissector.jpg"));
+		image=new JLabel(new ImageIcon("apkdissector.png"));
 		mainpanel.add(image);
 		
 		g.fill=GridBagConstraints.HORIZONTAL;
@@ -93,13 +99,13 @@ public class ApkDissector implements Response{
 		
 		//Managing Select APK Button
 		selectFileButton=new JButton("Select APK file");
-		selectFileButton.setBackground(new Color(215,215,215));
+		selectFileButton.setBackground(new Color(255,255,166));
 		buttonsPanel.add(selectFileButton);
 		
 		
 		//Managing Analyze Button
 		analyzeButton=new JButton("Analyze");
-		analyzeButton.setBackground(new Color(215,215,215));
+		analyzeButton.setBackground(new Color(255,255,166));
 		analyzeButton.addActionListener(new ActionListener() {
 			
 			@Override
@@ -113,7 +119,7 @@ public class ApkDissector implements Response{
 		
 		//Managing Decompile Button
 		decompileButton=new JButton("Decompile");
-		decompileButton.setBackground(new Color(215,215,215));
+		decompileButton.setBackground(new Color(255,255,166));
 		decompileButton.addActionListener(new ActionListener() {
 			
 			@Override
@@ -123,6 +129,19 @@ public class ApkDissector implements Response{
 			}
 		});
 		buttonsPanel.add(decompileButton);
+		
+		//Managing about Button
+		aboutButton=new JButton("About");
+		aboutButton.setBackground(new Color(255,255,166));
+		aboutButton.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				about();
+			}
+		});
+		buttonsPanel.add(aboutButton);
 		
 		
 		g.gridx=0;
@@ -138,7 +157,7 @@ public class ApkDissector implements Response{
 		//Managing Response Panel
 		responseArea=new JTextArea("",15,62);
 		responseArea.setEditable(false);
-		responseArea.setBackground(new Color(206,206,206));
+		responseArea.setBackground(Color.WHITE);
 		responseArea.setFont(new Font("serif",Font.PLAIN,12));
 		responsePanel.add(responseArea);
 		
@@ -176,7 +195,7 @@ public class ApkDissector implements Response{
 		
 		
 		
-		footerImage=new JLabel(new ImageIcon("apkdissectorfooter.jpg"));
+		footerImage=new JLabel(new ImageIcon("apkdissectorfooter.png"));
 		g.fill=GridBagConstraints.RELATIVE;
 		g.gridx=0;
 		g.gridy=3;
@@ -214,6 +233,17 @@ public class ApkDissector implements Response{
 		}
 		
 	}
+	
+	public void about(){
+		try{
+			String developer="Developed by Dibyendu Sikdar\n @dibsyhex \n https://github.com/dibsy";
+			JOptionPane.showMessageDialog(null,developer);
+			
+		}catch(Exception e){
+			displayError(e.toString());
+		}
+	}
+	
 	
 	@Override
 	public void displayLog(String log) {
