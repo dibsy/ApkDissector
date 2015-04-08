@@ -9,7 +9,7 @@ Basic useful feature list:
  * Decompile and extract the contents of the APK file
  
 ## How to use this application ?
-Download and extract the zip file from https://sourceforge.net/u/dibsyhex/profile/
+Download and extract the zip file from https://sourceforge.net/projects/apkdissector/
 
 Double click and open the jar file 
 
