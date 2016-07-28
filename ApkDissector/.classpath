@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="jadx-cli/|jadx-cli/|jadx-core/|jadx-core/" kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="commons-compress-1.9.jar"/>
 	<classpathentry kind="lib" path="commons-io-2.4.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_25/jre/lib/jfxswt.jar"/>
+	<classpathentry kind="lib" path="dx-1.10.jar"/>
+	<classpathentry kind="lib" path="gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="android-5.1.jar"/>
+	<classpathentry kind="lib" path="annotations-12.0.jar"/>
+	<classpathentry kind="lib" path="jadx-cli-0.6.0.jar"/>
+	<classpathentry kind="lib" path="jadx-core-0.6.0.jar"/>
+	<classpathentry kind="lib" path="jadx-gui-0.6.0.jar"/>
+	<classpathentry kind="lib" path="jcommander-1.47.jar"/>
+	<classpathentry kind="lib" path="jfontchooser-1.0.5.jar"/>
+	<classpathentry kind="lib" path="logback-classic-1.1.2.jar"/>
+	<classpathentry kind="lib" path="logback-core-1.1.2.jar"/>
+	<classpathentry kind="lib" path="rsyntaxtextarea-2.5.6.jar"/>
+	<classpathentry kind="lib" path="slf4j-api-1.7.10.jar"/>
+	<classpathentry kind="lib" path="asm-5.0.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
