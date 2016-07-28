@@ -24,7 +24,7 @@ Double click and open the jar file
  * Analyze - Find information about the contents inside the apk file.
  * Decompile APK/DEX - Decompile and extracts the contents on the APK file.
  
-How to decompile an APK file ?
+## How to decompile an APK file ?
 
 Once you click decompile it will create a folder called extract and inside that you will find a folder having same name as the file where you will get all the extracted contents of the apk
 
@@ -32,7 +32,7 @@ Once you click decompile it will create a folder called extract and inside that 
  * Decompile APK/DEX - Click this button to  decompile and extracts the contents on the APK file.
  * All the extracted files will be with in extracts directory within the folder name <apkfileName>.apk
 
-How to decompile the DEX file ?
+## How to decompile the DEX file ?
  * Select APK/DEX - Click this button to browse and select the DEX file which will be located inside the extracts/<apkfileName>.apk directory
  * Decompile APK/DEX - Click this button to  decompile and extracts the contents on the DEX file.
  * All the extracted files will be under extracts within <apkFilename.apk>\DEX_extracts
