@@ -1,4 +1,4 @@
-# Apk Dissector  [![Download APK Dissector](https://img.shields.io/sourceforge/dt/apkdissector.svg)](https://sourceforge.net/projects/apkdissector/files/latest/download)
+# Apk Dissector  [![Download APK Dissector](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/apkdissector/files/latest/download)
 
 ## Java Based APK Decompiler
 
